@@ -17,14 +17,12 @@ public class Solution {
             return;
         }
 
-        int count = 1;
-        while (true) {
+        for (int count = 1; true; count++) {
             int randomNumber = new Random().nextInt(inputNumber + 1);
             if (inputNumber == randomNumber) {
                 System.out.println("Попытка №" + count);
                 break;
             }
-            count++;
         }
     }
 }
