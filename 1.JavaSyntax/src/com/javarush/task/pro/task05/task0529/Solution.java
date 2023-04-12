@@ -2,6 +2,7 @@ package com.javarush.task.pro.task05.task0529;
 
 import java.lang.reflect.Field;
 import java.util.Arrays;
+import java.util.Objects;
 
 /* 
 Галаксианские роботанки (1)
@@ -36,7 +37,13 @@ public class Solution {
 
             }
         }
-
+        for (int i = 0; i < height; i++) {
+            for (int j = 0; j < width; j++) {
+                if (Objects.equals(field[i][j], robotank) && bombs[i][j] == 1){
+                  field[i][j] = hit;
+                }
+            }
+        }
 
         for (int i = 0; i < field.length; i++) {
             for (int j = 0; j < field[i].length; j++) {
