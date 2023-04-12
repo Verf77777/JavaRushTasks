@@ -1,5 +1,6 @@
 package com.javarush.task.pro.task05.task0529;
 
+import java.lang.reflect.Field;
 import java.util.Arrays;
 
 /* 
@@ -19,6 +20,10 @@ public class Solution {
             for (int j = 0; j < field[i].length; j++) {
                 field[i][j] = empty;
             }
+        }
+        for (int i = 0; i < field.length; i++){
+           int j = (int)(Math.random()*width);
+            field[i][j] = robotank;
         }
         for (int i = 0; i < field.length; i++){
             for (int j = 0; j < field[i].length; j++){
