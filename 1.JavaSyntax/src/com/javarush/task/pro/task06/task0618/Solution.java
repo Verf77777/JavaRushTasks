@@ -11,8 +11,10 @@ public class Solution {
     public static void main(String[] args) {
         System.out.println("Из болота вылез нематериальный монстр...");
 
-        //напишите тут ваш код
+        switchSword(immaterial);
     }
 
-    //напишите тут ваш код
+    public static void switchSword(String sword){
+        System.out.println("Меч переключен в " + sword + " режим.");
+    }
 }
