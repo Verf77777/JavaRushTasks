@@ -22,6 +22,16 @@ public class Solution {
         diabloPosition = getRandomNumber(4);
         findDiablo();
         battle();
+       if (isAmigoWin()){
+           System.out.println(winPhrase);
+       }
+       else {
+           System.out.println(loosePhrase);
+       }
+        //System.out.println(isAmigoWin() ? winPhrase : loosePhrase);
+    }
+    public static boolean isAmigoWin(){
+        return diabloLives <= 0;
     }
 
     public static void battle() {
